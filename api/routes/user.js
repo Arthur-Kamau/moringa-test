@@ -3,8 +3,6 @@ var router = express.Router();
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
-const emailUtil = require('../util/email-util');
-const { sendEmail, validateEmail } = emailUtil;
 
 
 
