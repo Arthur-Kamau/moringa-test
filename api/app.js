@@ -14,8 +14,6 @@ var indexRouter = require('./routes/index');
 var userRouter = require('./routes/user');
 var commentRouter = require('./routes/comment');
 
-// passport 
-// const passport = require('passport');
 
 var app = express();
 
