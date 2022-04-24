@@ -4,7 +4,9 @@ There is no frontend, the api is tested over postman.
 We will use sequalize orm with postgres database.
 
 
-The postman project link is
+The postman project link is `https://www.getpostman.com/collections/ce92cba89cd649cc69f8`
+in the case you are unable toimport from the above link import the json from postman folder into Postman.
+
 
 ## Getting Started
 * ensure you have installed.
@@ -26,7 +28,7 @@ Exexcution start in `bin/www` and uses port `4000`, the app has been hosted on i
 * env stores our secreats for example mailgun credentials for sending emails can also have default server arguments
 
 To test how the diffferent ednpoints work we wil use `POSTMAN`.
-open this link `https://www.getpostman.com/collections/ce92cba89cd649cc69f8` will open the REST request test collection.
+open this link `https://www.getpostman.com/collections/ce92cba89cd649cc69f8` (recomended) or use the json in postman folder ,will open the REST request test collection.
 
 NB: default user was create with name :`sample` email : `sample@mail.com`, password : hashed string `sample`
 

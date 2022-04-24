@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "301f9797-c373-4ba9-9bd0-b797498aff27",
+		"name": "Moringa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "get_comment_by_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://209.250.224.120:88/comment/item/1",
+							"protocol": "http",
+							"host": [
+								"209",
+								"250",
+								"224",
+								"120"
+							],
+							"port": "88",
+							"path": [
+								"comment",
+								"item",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://209.250.224.120:88/comment/all",
+							"protocol": "http",
+							"host": [
+								"209",
+								"250",
+								"224",
+								"120"
+							],
+							"port": "88",
+							"path": [
+								"comment",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\":\"hiolaa \",\n    \"email\":\"sample2@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://209.250.224.120:88/comment/add",
+							"protocol": "http",
+							"host": [
+								"209",
+								"250",
+								"224",
+								"120"
+							],
+							"port": "88",
+							"path": [
+								"comment",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"commentId\":2\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://209.250.224.120:88/comment/remove",
+							"protocol": "http",
+							"host": [
+								"209",
+								"250",
+								"224",
+								"120"
+							],
+							"port": "88",
+							"path": [
+								"comment",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_comment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"commentId\":1,\n    \"comment\":\"adios\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://209.250.224.120:88/comment/update",
+							"protocol": "http",
+							"host": [
+								"209",
+								"250",
+								"224",
+								"120"
+							],
+							"port": "88",
+							"path": [
+								"comment",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sample@mail.com\",\n    \"password\":\"sample\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://209.250.224.120:88/user/login",
+							"protocol": "http",
+							"host": [
+								"209",
+								"250",
+								"224",
+								"120"
+							],
+							"port": "88",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sample2@mail.com\",\n    \"password\":\"sample2\",\n    \"name\":\"sample2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://209.250.224.120:88/user/register",
+							"protocol": "http",
+							"host": [
+								"209",
+								"250",
+								"224",
+								"120"
+							],
+							"port": "88",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
