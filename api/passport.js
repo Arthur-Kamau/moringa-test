@@ -16,6 +16,7 @@ passport.use(new LocalStrategy({
 },
   async function (email, password, cb) {
 
+    console.log("bxxx ===================")
     try {
       var user = await usersModel.findOne({
         where: {
